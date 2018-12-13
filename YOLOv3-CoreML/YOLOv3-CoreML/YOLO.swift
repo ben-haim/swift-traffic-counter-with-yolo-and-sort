@@ -5,11 +5,11 @@ import CoreML
 class YOLO {
   public static let inputWidth = 416
   public static let inputHeight = 416
-  public static let maxBoundingBoxes = 10
+  public static let maxBoundingBoxes = 50
 
   // Tweak these values to get more or fewer predictions.
-  let confidenceThreshold: Float = 0.6
-  let iouThreshold: Float = 0.5
+  let confidenceThreshold: Float = 0.75
+  let iouThreshold: Float = 0.2
 
   struct Prediction {
     let classIndex: Int
@@ -17,7 +17,7 @@ class YOLO {
     let rect: CGRect
   }
 
-  let model = YOLOv3()
+  let model = Yolov3()
 
   public init() { }
 

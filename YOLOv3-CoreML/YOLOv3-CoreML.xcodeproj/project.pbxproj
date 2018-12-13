@@ -17,8 +17,91 @@
 		7BC25FA41EF1B7D1002ECBBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC25FA31EF1B7D1002ECBBA /* ViewController.swift */; };
 		7BC25FA71EF1B7D1002ECBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BC25FA51EF1B7D1002ECBBA /* Main.storyboard */; };
 		7BC25FA91EF1B7D1002ECBBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BC25FA81EF1B7D1002ECBBA /* Assets.xcassets */; };
-		7BC25FB41EF1CEB0002ECBBA /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 7BC25FB31EF1CEAE002ECBBA /* YOLOv3.mlmodel */; };
+		991397A221AD43CE00B05580 /* traffic.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 991397A121AD43CE00B05580 /* traffic.mp4 */; };
+		993AE23921ABED07003F2E26 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993AE23821ABED07003F2E26 /* Counter.swift */; };
+		99B244A621A6F5A00060BB7E /* sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B244A521A6F5A00060BB7E /* sort.swift */; };
+		99B244AB21A6F5C30060BB7E /* matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B244A721A6F5C30060BB7E /* matrix.swift */; };
+		99B244AC21A6F5C30060BB7E /* tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B244A821A6F5C30060BB7E /* tracker.swift */; };
+		99B244AE21A6F5C30060BB7E /* hungarian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B244AA21A6F5C30060BB7E /* hungarian.swift */; };
+		99B244FB21A700FE0060BB7E /* kalman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B244FA21A700FE0060BB7E /* kalman.swift */; };
+		99B244FD21A970330060BB7E /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B244FC21A970330060BB7E /* Line.swift */; };
+		99F5D1CE21C26371005B0117 /* Surge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F5D1C121C26353005B0117 /* Surge.framework */; };
+		99F5D1D121C263EE005B0117 /* Surge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99F5D1C121C26353005B0117 /* Surge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		99F5D1D321C27516005B0117 /* Yolov3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 99F5D1D221C27516005B0117 /* Yolov3.mlmodel */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99F5D1C021C26353005B0117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99F5D1B621C26353005B0117 /* Surge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8A1E1AA19917A79009735E2;
+			remoteInfo = "Surge-iOS";
+		};
+		99F5D1C221C26353005B0117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99F5D1B621C26353005B0117 /* Surge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F84A6AAE19A9A72F007B53E1;
+			remoteInfo = "SurgeTests-iOS";
+		};
+		99F5D1C421C26353005B0117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99F5D1B621C26353005B0117 /* Surge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 614AD31F1FC0AD99002BFE1C;
+			remoteInfo = "Surge-macOS";
+		};
+		99F5D1C621C26353005B0117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99F5D1B621C26353005B0117 /* Surge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 614AD3271FC0AD99002BFE1C;
+			remoteInfo = "SurgeTests-macOS";
+		};
+		99F5D1C821C26353005B0117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99F5D1B621C26353005B0117 /* Surge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 614AD3511FC0B001002BFE1C;
+			remoteInfo = "Surge-tvOS";
+		};
+		99F5D1CA21C26353005B0117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99F5D1B621C26353005B0117 /* Surge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 614AD3591FC0B001002BFE1C;
+			remoteInfo = "SurgeTests-tvOS";
+		};
+		99F5D1CC21C26353005B0117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99F5D1B621C26353005B0117 /* Surge.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 614AD3821FC0B125002BFE1C;
+			remoteInfo = "Surge-watchOS";
+		};
+		99F5D1CF21C26398005B0117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99F5D1B621C26353005B0117 /* Surge.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8A1E1A919917A79009735E2;
+			remoteInfo = "Surge-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99B244F921A700540060BB7E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				99F5D1D121C263EE005B0117 /* Surge.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		372CB261209C9B0F00F501E3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,8 +115,17 @@
 		7BC25FA61EF1B7D1002ECBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BC25FA81EF1B7D1002ECBBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BC25FAD1EF1B7D1002ECBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BC25FB31EF1CEAE002ECBBA /* YOLOv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3.mlmodel; sourceTree = "<group>"; };
 		7BC25FB51EF27C0D002ECBBA /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		991397A121AD43CE00B05580 /* traffic.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = traffic.mp4; sourceTree = "<group>"; };
+		993AE23821ABED07003F2E26 /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		99B244A521A6F5A00060BB7E /* sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sort.swift; sourceTree = "<group>"; };
+		99B244A721A6F5C30060BB7E /* matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = matrix.swift; sourceTree = "<group>"; };
+		99B244A821A6F5C30060BB7E /* tracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tracker.swift; sourceTree = "<group>"; };
+		99B244AA21A6F5C30060BB7E /* hungarian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hungarian.swift; sourceTree = "<group>"; };
+		99B244FA21A700FE0060BB7E /* kalman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kalman.swift; sourceTree = "<group>"; };
+		99B244FC21A970330060BB7E /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		99F5D1B621C26353005B0117 /* Surge.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Surge.xcodeproj; path = ../Surge/Surge.xcodeproj; sourceTree = "<group>"; };
+		99F5D1D221C27516005B0117 /* Yolov3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Yolov3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F5D1CE21C26371005B0117 /* Surge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,8 +143,10 @@
 		7BC25F951EF1B7D1002ECBBA = {
 			isa = PBXGroup;
 			children = (
+				99F5D1B621C26353005B0117 /* Surge.xcodeproj */,
 				7BC25FA01EF1B7D1002ECBBA /* YOLOv3-CoreML */,
 				7BC25F9F1EF1B7D1002ECBBA /* Products */,
+				99F5D1B421C261EE005B0117 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,20 +161,49 @@
 		7BC25FA01EF1B7D1002ECBBA /* YOLOv3-CoreML */ = {
 			isa = PBXGroup;
 			children = (
+				991397A121AD43CE00B05580 /* traffic.mp4 */,
+				99B244AA21A6F5C30060BB7E /* hungarian.swift */,
+				99B244A721A6F5C30060BB7E /* matrix.swift */,
+				99B244FA21A700FE0060BB7E /* kalman.swift */,
+				99B244A821A6F5C30060BB7E /* tracker.swift */,
+				99B244A521A6F5A00060BB7E /* sort.swift */,
 				372CB263209C9B2600F501E3 /* BoundingBox.swift */,
+				993AE23821ABED07003F2E26 /* Counter.swift */,
+				99B244FC21A970330060BB7E /* Line.swift */,
 				372CB264209C9B2600F501E3 /* Helpers.swift */,
 				372CB261209C9B0F00F501E3 /* AppDelegate.swift */,
 				7BC25FA81EF1B7D1002ECBBA /* Assets.xcassets */,
 				7BA1C6D91EF2B30200BB25EF /* CVPixelBuffer+Helpers.swift */,
 				7BC25FAD1EF1B7D1002ECBBA /* Info.plist */,
 				7BC25FA51EF1B7D1002ECBBA /* Main.storyboard */,
-				7BC25FB31EF1CEAE002ECBBA /* YOLOv3.mlmodel */,
+				99F5D1D221C27516005B0117 /* Yolov3.mlmodel */,
 				7BA1C6D11EF2827500BB25EF /* UIImage+CVPixelBuffer.swift */,
 				7BC25FB51EF27C0D002ECBBA /* VideoCapture.swift */,
 				7BC25FA31EF1B7D1002ECBBA /* ViewController.swift */,
 				7BA1C6D71EF2871600BB25EF /* YOLO.swift */,
 			);
 			path = "YOLOv3-CoreML";
+			sourceTree = "<group>";
+		};
+		99F5D1B421C261EE005B0117 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99F5D1B721C26353005B0117 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99F5D1C121C26353005B0117 /* Surge.framework */,
+				99F5D1C321C26353005B0117 /* SurgeTests-iOS.xctest */,
+				99F5D1C521C26353005B0117 /* Surge.framework */,
+				99F5D1C721C26353005B0117 /* SurgeTests-macOS.xctest */,
+				99F5D1C921C26353005B0117 /* Surge.framework */,
+				99F5D1CB21C26353005B0117 /* SurgeTests-tvOS.xctest */,
+				99F5D1CD21C26353005B0117 /* Surge.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,10 +216,12 @@
 				7BC25F9A1EF1B7D1002ECBBA /* Sources */,
 				7BC25F9B1EF1B7D1002ECBBA /* Frameworks */,
 				7BC25F9C1EF1B7D1002ECBBA /* Resources */,
+				99B244F921A700540060BB7E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				99F5D1D021C26398005B0117 /* PBXTargetDependency */,
 			);
 			name = "YOLOv3-CoreML";
 			productName = "YOLOv3-CoreML";
@@ -109,11 +235,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = MachineThink;
 				TargetAttributes = {
 					7BC25F9D1EF1B7D1002ECBBA = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -129,6 +256,12 @@
 			mainGroup = 7BC25F951EF1B7D1002ECBBA;
 			productRefGroup = 7BC25F9F1EF1B7D1002ECBBA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 99F5D1B721C26353005B0117 /* Products */;
+					ProjectRef = 99F5D1B621C26353005B0117 /* Surge.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7BC25F9D1EF1B7D1002ECBBA /* YOLOv3-CoreML */,
@@ -136,12 +269,65 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		99F5D1C121C26353005B0117 /* Surge.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Surge.framework;
+			remoteRef = 99F5D1C021C26353005B0117 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99F5D1C321C26353005B0117 /* SurgeTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SurgeTests-iOS.xctest";
+			remoteRef = 99F5D1C221C26353005B0117 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99F5D1C521C26353005B0117 /* Surge.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Surge.framework;
+			remoteRef = 99F5D1C421C26353005B0117 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99F5D1C721C26353005B0117 /* SurgeTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SurgeTests-macOS.xctest";
+			remoteRef = 99F5D1C621C26353005B0117 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99F5D1C921C26353005B0117 /* Surge.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Surge.framework;
+			remoteRef = 99F5D1C821C26353005B0117 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99F5D1CB21C26353005B0117 /* SurgeTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SurgeTests-tvOS.xctest";
+			remoteRef = 99F5D1CA21C26353005B0117 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		99F5D1CD21C26353005B0117 /* Surge.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Surge.framework;
+			remoteRef = 99F5D1CC21C26353005B0117 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		7BC25F9C1EF1B7D1002ECBBA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7BC25FA91EF1B7D1002ECBBA /* Assets.xcassets in Resources */,
+				991397A221AD43CE00B05580 /* traffic.mp4 in Resources */,
 				7BC25FA71EF1B7D1002ECBBA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,17 +341,32 @@
 			files = (
 				7BA1C6D01EF27DA000BB25EF /* VideoCapture.swift in Sources */,
 				7BA1C6DA1EF2B30200BB25EF /* CVPixelBuffer+Helpers.swift in Sources */,
-				7BC25FB41EF1CEB0002ECBBA /* YOLOv3.mlmodel in Sources */,
+				99F5D1D321C27516005B0117 /* Yolov3.mlmodel in Sources */,
 				372CB265209C9B2600F501E3 /* BoundingBox.swift in Sources */,
+				99B244AB21A6F5C30060BB7E /* matrix.swift in Sources */,
 				372CB266209C9B2600F501E3 /* Helpers.swift in Sources */,
+				99B244A621A6F5A00060BB7E /* sort.swift in Sources */,
+				993AE23921ABED07003F2E26 /* Counter.swift in Sources */,
 				372CB262209C9B0F00F501E3 /* AppDelegate.swift in Sources */,
+				99B244AC21A6F5C30060BB7E /* tracker.swift in Sources */,
+				99B244FD21A970330060BB7E /* Line.swift in Sources */,
+				99B244FB21A700FE0060BB7E /* kalman.swift in Sources */,
 				7BA1C6D21EF2827800BB25EF /* UIImage+CVPixelBuffer.swift in Sources */,
 				7BC25FA41EF1B7D1002ECBBA /* ViewController.swift in Sources */,
 				7BA1C6D81EF2871600BB25EF /* YOLO.swift in Sources */,
+				99B244AE21A6F5C30060BB7E /* hungarian.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99F5D1D021C26398005B0117 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Surge-iOS";
+			targetProxy = 99F5D1CF21C26398005B0117 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7BC25FA51EF1B7D1002ECBBA /* Main.storyboard */ = {
@@ -193,12 +394,16 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -248,12 +453,16 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -285,19 +494,20 @@
 		7BC25FB11EF1B7D1002ECBBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: 1067837450@qq.com (EA34W5QFTF)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LXGRKDMEQU;
+				DEVELOPMENT_TEAM = RZ92NJ5WD2;
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "YOLOv3-CoreML/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.machinethink.YOLOv3-CoreML";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guillelopez.YOLOv3-CoreML";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -305,17 +515,18 @@
 		7BC25FB21EF1B7D1002ECBBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: 1067837450@qq.com (EA34W5QFTF)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LXGRKDMEQU;
+				DEVELOPMENT_TEAM = RZ92NJ5WD2;
 				INFOPLIST_FILE = "YOLOv3-CoreML/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.machinethink.YOLOv3-CoreML";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guillelopez.YOLOv3-CoreML";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

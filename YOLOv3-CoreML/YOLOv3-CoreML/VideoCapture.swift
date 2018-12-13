@@ -9,7 +9,7 @@ public protocol VideoCaptureDelegate: class {
 public class VideoCapture: NSObject {
   public var previewLayer: AVCaptureVideoPreviewLayer?
   public weak var delegate: VideoCaptureDelegate?
-  public var fps = 15
+  public var fps = 30
 
   let captureSession = AVCaptureSession()
   let videoOutput = AVCaptureVideoDataOutput()
@@ -89,7 +89,7 @@ extension VideoCapture: AVCaptureVideoDataOutputSampleBufferDelegate {
     // framerate.
     let timestamp = CMSampleBufferGetPresentationTimeStamp(sampleBuffer)
     let deltaTime = timestamp - lastTimestamp
-    if deltaTime >= CMTimeMake(1, Int32(fps)) {
+    if deltaTime >= CMTimeMake(value: 1, timescale: Int32(fps)) {
       lastTimestamp = timestamp
       let imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer)
       delegate?.videoCapture(self, didCaptureVideoFrame: imageBuffer, timestamp: timestamp)
